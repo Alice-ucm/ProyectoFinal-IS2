@@ -1,13 +1,11 @@
 package Capa.Presentacion;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import Capa.Integracion.FactorySA;
 
-
-public abstract class Controlador implements ActionListener {
-
+public abstract class Controlador extends FactoryControlador {
 
 	Principal vista = new Principal();
+	private FactorySA FSA;
 
 	frmMostrarEquipaje vista2 = new frmMostrarEquipaje();
 
@@ -17,9 +15,10 @@ public abstract class Controlador implements ActionListener {
 
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-
+	public Controlador() {
+		FSA = FactorySA.getInstance();
+		// this.con = new Conexion();
 	}
+
+
 }
