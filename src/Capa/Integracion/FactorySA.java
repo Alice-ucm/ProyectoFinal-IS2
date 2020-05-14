@@ -1,6 +1,7 @@
 package Capa.Integracion;
 
 
+import Capa.Negocio.DTOAlmacen;
 import Capa.Negocio.SAAlmacen;
 import Capa.Negocio.SATransporte;
 
@@ -17,5 +18,7 @@ public abstract class FactorySA {
 	public abstract SAAlmacen creaSAEquipaje();
 
 	public abstract SATransporte creaSATransporte();
+
+	public abstract DTOAlmacen crearDAOEquipaje();
 
 }
