@@ -14,31 +14,19 @@ import javax.swing.table.DefaultTableModel;
 
 public class frmMostrarEquipaje extends JFrame {
 
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
-	private static final int PAGE_EXISTS = 0;
-	private static final int NO_SUCH_PAGE = 0;
+
 	private JPanel contentPane;
 	private JTable table;
 	private JLabel lblNewLabel;
 
-	/**
-	 * Launch the application.
-	 * 
-	 * public static void main(String[] args) { EventQueue.invokeLater(new
-	 * Runnable() { public void run() { try { frmMostarEquipaje frame = new
-	 * frmMostarEquipaje(); frame.setVisible(true); } catch (Exception e) {
-	 * e.printStackTrace(); } } }); }
-	 */
-
-	/**
-	 * Create the frame.
-	 */
-
-
 	public frmMostrarEquipaje() {
+		setLocationRelativeTo(null);
+		setResizable(false);
+		setLayout(null);
+
+
 		setTitle("Mostar Equipaje");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 603, 308);

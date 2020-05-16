@@ -17,15 +17,10 @@ import javax.swing.border.EmptyBorder;
 
 public class Principal extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			@Override
@@ -40,10 +35,8 @@ public class Principal extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public Principal() {
+		this.setLocationRelativeTo(null);
 		Image portada = new ImageIcon(this.getClass().getResource("fondo.jpeg")).getImage();
 
 		JLabel lblPortada = new JLabel("");
